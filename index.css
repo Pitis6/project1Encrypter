@@ -7,6 +7,10 @@
     
 }
 
+body{
+    margin: 40px;
+}
+
 header{
     margin-bottom: 32px;
 }
@@ -46,6 +50,11 @@ button{
     padding: 24px;
     margin-bottom: 16px;
     border-radius: 24px;
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.01;
 }
 
 .buttonContainer{
@@ -81,13 +90,15 @@ h2{
     width: 100%;
     text-align: center;
     background-color: #ffffff;
+    font-size: 32px;
 
 }
 
-@media (min-width: 376px ){
-    body{
-        margin: 40px;
-    }
+aside {
+    display: none;
+}
+
+ @media (min-width: 376px ){
     .buttonContainer{
         display: flex;
         flex-direction:row;
@@ -99,15 +110,24 @@ h2{
     }
     .output p{
         margin: 0;
+        font-size: 32px;
+    }
+    aside {
+        display: none;
     }
     
 }
+
+
 @media (min-width: 1440px){
-    body{
+    /* body{
         display: flex;
         justify-content: space-around;
+    } */
+    section{
+        /* display: flex; */
     }
-    aside img{
+    /* aside img{
         width: 100%;
         height: auto;
         background-color: #ffffff;
@@ -119,13 +139,18 @@ h2{
     }
     aside {
         width: 25vw;
-        height: 100vh;
+        height: 85vh;
         background-color: #ffffff;
         border-radius: 24px;
+        display: block;
     }
     aside p{
         text-align: center;
         background-color: #ffffff;
-    }
+        display: flex;
+        font-size: 32px;
+        padding: 16px;
+
+    } */
     
-}
+} 
